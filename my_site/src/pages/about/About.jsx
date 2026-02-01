@@ -5,8 +5,8 @@ import AboutWho from './aboutwho/AboutWho'
 import TeamSection from './managementTeam/TeamSection'
 import WorkSection from './workSection/WorkSection'
 import ValuesSection from './Values/ValuesSection'
-import VideoSection from './Video/VideoSection'
 import LetsStartForm from '../home/form/LetsStartForm'
+import VideoSection from './videoSection/VideoSection'
 
 
 const About = () => {
