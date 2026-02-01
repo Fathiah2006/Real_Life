@@ -2,8 +2,8 @@ import React from 'react';
 
 import Hero from './hero/Hero';
 import Services from './services/Services';
-import About from './home/about/About.jsx';
 import Partners from './partners/Partners';
+import About from '../about/About';
 import TechStack from './teckstack/TechStack';
 import Industry from './industry/industry';
 import AdvancedTech from './advancetech/AdvancedTech';
