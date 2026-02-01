@@ -5,7 +5,7 @@ import Services from './services/Services';
 import Partners from './partners/Partners';
 import About from '../about/About';
 import TechStack from './teckstack/TechStack';
-import Industry from './industry/industry';
+import Industry from './industry/Industry';
 import AdvancedTech from './advancetech/AdvancedTech';
 import WhyVonCross from './whyvoncross/WhyVoncross';
 import ValuesSection from './values/ValuesSection';
@@ -19,7 +19,7 @@ const Home = () => {
       <About />
       <Services />
       <TechStack />
-      <Industry />
+      <industryndustry />
       <AdvancedTech />
       <WhyVonCross />
       <ValuesSection />
