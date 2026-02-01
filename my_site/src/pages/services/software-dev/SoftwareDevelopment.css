@@ -1,0 +1,438 @@
+/* SoftwareDevelopment.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* ==================== Base Styles ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.software-page {
+    font-family: 'Nunito', sans-serif;
+    color: #111827;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== Hero Section ==================== */
+.software-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    padding: 120px 20px 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.software-hero .breadcrumb {
+    font-size: 14px;
+    margin-bottom: 24px;
+    opacity: 0.85;
+}
+
+.software-hero .breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.software-hero .breadcrumb a:hover {
+    color: #fff;
+}
+
+.software-hero .breadcrumb .active {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.software-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.software-subtitle {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.software-btn {
+    background: #ac051b;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.software-btn:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== About Section ==================== */
+.software-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.software-about-left img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.software-about-left img:hover {
+    transform: scale(1.02);
+}
+
+.software-about-right h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.software-about-right p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.software-about-right ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.software-about-right ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.software-about-right ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ac051b;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ==================== Benefits Section ==================== */
+.software-benefits {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #ac051b;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== Technologies Section ==================== */
+.software-technologies {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tech-category {
+    background: #f9fafb;
+    padding: 32px;
+    border-radius: 12px;
+    border-left: 4px solid #ac051b;
+}
+
+.tech-category h3 {
+    color: #0b1320;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-list span {
+    background: #fff;
+    color: #4b5563;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.tech-list span:hover {
+    background: #ac051b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ==================== Services Section ==================== */
+.software-services {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.service-box {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.service-box h3 {
+    color: #0b1320;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-box p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== Process Section ==================== */
+.software-process {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: #f9fafb;
+    border-top: 4px solid #ac051b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.step span {
+    display: block;
+    font-size: 40px;
+    color: #ac051b;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #0b1320;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.step p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== CTA Section ==================== */
+.software-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(59, 130, 246, 0.95));
+    color: #fff;
+}
+
+.software-cta h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.software-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
+.software-cta button {
+    background: #ac051b;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.software-cta button:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    .software-hero {
+        padding: 80px 20px 60px;
+    }
+
+    .software-title {
+        font-size: 32px;
+    }
+
+    .software-subtitle {
+        font-size: 16px;
+    }
+
+    .software-about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .software-about-right h2 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .software-benefits,
+    .software-technologies,
+    .software-services,
+    .software-process {
+        padding: 60px 20px;
+    }
+
+    .software-cta {
+        padding: 60px 20px;
+    }
+
+    .software-cta h2 {
+        font-size: 28px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .software-title {
+        font-size: 26px;
+    }
+
+    .software-btn,
+    .software-cta button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .tech-list span {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}

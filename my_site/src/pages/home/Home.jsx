@@ -24,10 +24,6 @@ const Home = () => {
       <WhyVonCross />
       <ValuesSection />
       <LetsStartForm />
-
-
-      {/* <Testimonials /> Uncomment when you have the Testimonials component ready */}
-
     </>
   );
 };

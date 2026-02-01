@@ -1,0 +1,56 @@
+.consultation-banner {
+    background: linear-gradient(90deg, #031c47 0%, #0f2f6f 60%, #321d3f 85%);
+    color: #fff;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultation-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.consultation-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.consultation-text p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+.consultation-btn button {
+    background:#ac051b;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2.1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.consultation-btn button:hover {
+    background: #ac051b;
+    transform: translateY(-2px);
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+    .consultation-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .consultation-text h2 {
+        font-size: 1.6rem;
+    }
+}

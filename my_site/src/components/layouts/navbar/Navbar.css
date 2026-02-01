@@ -44,12 +44,15 @@
 }
 
 
-.navbar .nav-logo h2 {
+.navbar .nav-logo h2 Link{
     font-size: 20px;
     font-weight: 700;
     color: #fff;
 }
-
+.nav-logo h2 a{
+    text-decoration: none;
+    color: #fff;
+}
 .menu-icon {
     display: none;
     font-size: 24px;
@@ -155,6 +158,10 @@
     background: #fff;
 }
 
+.navbar.scrolled .nav-logo h2 a{
+    color: #000;
+}
+
 .dropdown li a:hover {
     color: #ac051b !important;
 }
@@ -164,7 +171,7 @@
     transition: transform 0.3s ease;
 }
 
-.contact-btn {
+ button.contact-btn {
     margin-left: 20px;
     padding: 8px 20px;
     background-color: #ac051b;
@@ -174,6 +181,8 @@
     font-weight: 600;
     font-size: 14px;
     transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
 }
 
 .contact-btn:hover {
@@ -209,7 +218,7 @@
         }
 
     .nav-links.show {
-        max-height: 1000px;
+        max-height: 2000px;
         padding: 10px 0;
     }
 
@@ -223,7 +232,7 @@
     .nav-links ul li {
         width: 100%;
         border-bottom: 1px solid #eee;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -395,8 +404,6 @@
   display: none;
 }
 
-
-/* === DESKTOP SCROLL STYLES ONLY === */
 @media (min-width: 769px) {
     .dropdown-wrapper {
         position: relative;
@@ -458,8 +465,8 @@
 
     /* Disable scroll effects and show full dropdown */
     .dropdown-wrapper {
-        max-height: none !important;
-        overflow: visible !important;
+        max-height: none;
+        overflow: visible;
     }
 
     .services-dropdown {

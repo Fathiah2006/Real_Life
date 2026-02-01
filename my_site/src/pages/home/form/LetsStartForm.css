@@ -24,11 +24,14 @@
 
 .left-section {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+
 .left-section h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3.1rem;
+    margin-bottom: 40px;
 }
 
 .left-section h1 span {
@@ -38,13 +41,15 @@
 .steps h4 {
     font-size: 0.8rem;
     color: #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .steps ol {
     list-style: none;
     counter-reset: step;
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .steps ol li {
@@ -63,7 +68,7 @@
 
 .contact-email {
     margin-top: 40px;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
 }
 
 .contact-email a {
@@ -73,6 +78,7 @@
     display: block;
     margin-top: 5px;
 }
+
 .contact-email a:hover {
     color: #fff;
 }
@@ -86,25 +92,41 @@ form {
     flex-direction: column;
 }
 
-label {
+.right-section label {
     margin-top: 15px;
     font-weight: 500;
+    color: #fff !important;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    margin-top: 6px;
+    margin-top: 8px;
     padding: 10px;
     background: transparent;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    color: white;
+    border : 2px solid #ac051b !important;
+    color: #fff !important;
     font-size: 1rem;
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    color: white !important;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 textarea {
     resize: vertical;
+    color: #fff !important;
 }
 
 .error {
@@ -134,8 +156,9 @@ textarea {
     font-size: 0.95rem;
     color: white;
 }
-.file-label:hover{
-    color:#ac051b;
+
+.file-label:hover {
+    color: #ac051b;
 }
 
 .send-btn {
@@ -147,6 +170,10 @@ textarea {
     cursor: pointer;
     border-radius: 4px;
     margin-top: 10px;
+}
+
+.send-btn:hover {
+    background-color: #ff4d6d;
 }
 
 .bottom-row {
@@ -180,10 +207,12 @@ textarea {
     cursor: pointer;
     border-radius: 4px;
 }
+
 .consult-btn:hover {
     background-color: #ac051b;
     color: white;
 }
+
 @media (max-width: 900px) {
     .form-wrapper {
         flex-direction: column;

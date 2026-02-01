@@ -50,6 +50,10 @@
     font-size: 17px;
     transition: 0.3s;
 }
+.service-tab {
+    text-decoration: none;
+    display: inline-block;
+}
 
 .service-tab.active,
 .service-tab:hover {
@@ -101,15 +105,20 @@
     .services-menu {
         width: 100%;
         flex-direction: row;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .service-tab {
-        flex: 1 0 auto;
+        flex: 1 1 calc(50% - 20px);
         text-align: center;
+        min-width: 140px;
     }
+    
 
     .service-details {
         max-width: 100%;
+        margin-top: 20px;
     }
 }

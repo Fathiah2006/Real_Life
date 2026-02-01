@@ -1,0 +1,50 @@
+.work-section {
+    background-color: #fff;
+    /* light gray like screenshot */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.work-heading {
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.work-heading span {
+    color: #007bff;
+    /* blue highlight */
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.work-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 15px 0 10px;
+}
+
+.work-card p {
+    font-size: 0.95rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.work-icon {
+    font-size: 40px;
+    color: #007bff;
+    /* blue icon */
+}

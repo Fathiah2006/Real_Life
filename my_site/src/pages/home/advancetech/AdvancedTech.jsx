@@ -82,46 +82,6 @@ const techData = [
     ],
     link: 'Blockchain development ',
     highlighted: true
-  },
-  {
-    title: 'AR/VR (Augmented & Virtual Reality)',
-    icon: <FaEye />,
-    description:
-      'Enhance user engagement through immersive technologies. Our AR and VR solutions transform customer experiences across education, healthcare, real estate, and gaming with interactive and realistic simulations.',
-    points: [
-      'interactive AR/VR application development',
-      'training simulations and virtual walkthroughs',
-      'real-time environment rendering',
-      'AR-powered marketing campaigns',
-      'immersive e-learning platforms',
-      '3D modeling and animation for virtual experiences',
-      'mobile AR/VR integration',
-      'hardware-agnostic development',
-      'gamification using VR',
-      'AR for e-commerce and virtual try-ons'
-    ],
-    link: 'AR/VR solutions ',
-    highlighted: true
-  },
-  {
-    title: 'Edge Computing',
-    icon: <FaServer />,
-    description:
-      'Reduce latency, improve reliability, and manage data closer to where it’s generated. We deploy edge computing solutions for real-time processing at the source, especially useful in IoT, industrial automation, and remote monitoring.',
-    points: [
-      'edge server deployment and configuration',
-      'real-time data analytics at the edge',
-      'low-latency computing architectures',
-      'edge AI model deployment',
-      'offline-first applications',
-      'remote and industrial edge use cases',
-      'IoT edge gateway integration',
-      'resilient and secure data handling',
-      'cloud-to-edge synchronization',
-      'network optimization for edge workloads'
-    ],
-    link: 'Edge computing services ',
-    highlighted: true
   }
 ];
 

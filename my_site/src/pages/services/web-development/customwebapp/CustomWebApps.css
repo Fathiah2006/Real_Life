@@ -1,0 +1,54 @@
+.custom-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    color: #222;
+}
+
+.custom-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.custom-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #2979ff;
+    /* Blue like screenshot */
+}
+
+.custom-subtext {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2b3a55;
+    max-width: 850px;
+    margin: 0 auto 50px;
+}
+
+.custom-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.stat h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1rem;
+    color: #333;
+}

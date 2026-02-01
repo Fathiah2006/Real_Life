@@ -1,0 +1,475 @@
+/* Combined Cybersecurity & Cloud Migration Page Styles */
+
+/* Hero Section */
+.cyber-migration-hero {
+    background: linear-gradient(135deg, #0A1128 0%, #001F54 100%);
+    padding: 120px 20px 80px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-migration-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title .highlight {
+    color: #2e80ec; 
+    text-shadow: 0 0 20px rgba(46, 128, 236, 0.5);
+}
+
+.hero-title .highlight-alt {
+    color: #ac051b;
+    text-shadow: 0 0 20px rgba(172, 5, 27, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-btn {
+    background: linear-gradient(135deg, #2e80ec 0%, #ac051b 100%);
+    color: #ffff;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 128, 236, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(46, 128, 236, 0.3);}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    display: inline-block;
+    background: linear-gradient(135deg, #001F54, #0A1128);
+    color: #ffff;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.section-label-alt {
+    background: linear-gradient(135deg, #0A1128 0%, #001F54 100%);}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #1a202c;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Cybersecurity Section */
+.cybersecurity-section {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.cyber-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.cyber-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cyber-features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 40px;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-text h3 {
+    font-size: 20px;
+    color: #1a202c;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.feature-text p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.cyber-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #2e80ec;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #1a202c;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Section Divider */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #2e80ec, transparent);
+    margin: 0;
+}
+
+/* Migration Section */
+.migration-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.migration-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.migration-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.migration-features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.migration-strategies {
+    margin-top: 60px;
+}
+
+.strategies-title {
+    font-size: 28px;
+    text-align: center;
+    color: #1a202c;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.strategies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.strategy-card {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    padding: 35px 30px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.strategy-card:hover {
+    transform: translateY(-5px);
+    border-color: #2e80ec;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.strategy-tag {
+    display: inline-block;
+    background: #2e80ec;
+    color: #ffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.strategy-card h4 {
+    font-size: 20px;
+    color: #1a202c;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.strategy-card p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.section-title1{
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.benefit-box {
+    background: rgba(7, 0, 0, 0.409);
+    padding: 40px 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.benefit-box:hover {
+    background: rgba(255, 255, 255, 0.066);
+    transform: translateY(-5px);
+}
+
+.benefit-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2e80ec;
+    margin-bottom: 20px;
+}
+
+.benefit-box h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.benefit-box p {
+    font-size: 15px;
+    opacity: 0.9;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* CTA Section */
+.combined-cta {
+    background: #012056b5;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.combined-cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.combined-cta p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.combined-cta button {
+    background: linear-gradient(135deg, #2e80ec 0%, #ac051b 100%);
+    color: #ffff;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 128, 236, 0.3);}
+
+.combined-cta button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(46, 128, 236, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-header h2,
+    .section-title,
+    .combined-cta h2 {
+        font-size: 28px;
+    }
+
+    .cyber-content,
+    .migration-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cyber-services-grid,
+    .strategies-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cyber-migration-hero {
+        padding: 100px 20px 60px;
+    }
+
+    .strategies-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-btn,
+    .combined-cta button {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 32px;
+    }
+
+    .benefit-number {
+        font-size: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+}

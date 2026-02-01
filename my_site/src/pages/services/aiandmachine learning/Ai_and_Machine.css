@@ -1,0 +1,387 @@
+/* Ai_and_Machine.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* ==================== Base Styles ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.ai-page {
+    font-family: 'Nunito', sans-serif;
+    color: #111827;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== Hero Section ==================== */
+.ai-hero {
+    background: linear-gradient(135deg, #0a1128 0%, #001f54 100%);
+    padding: 120px 20px 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.ai-hero .breadcrumb {
+    font-size: 14px;
+    margin-bottom: 24px;
+    opacity: 0.85;
+}
+
+.ai-hero .breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ai-hero .breadcrumb a:hover {
+    color: #fff;
+}
+
+.ai-hero .breadcrumb .active {
+    color: #ac051b;
+    font-weight: 600;
+}
+
+.ai-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ai-subtitle {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.ai-btn {
+    background: #ac051b;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-btn:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== About Section ==================== */
+.ai-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.ai-about-left img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ai-about-left img:hover {
+    transform: scale(1.02);
+}
+
+.ai-about-right h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.ai-about-right p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.ai-about-right ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ai-about-right ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.ai-about-right ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ac051b;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ==================== Benefits Section ==================== */
+.ai-benefits {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.section-title1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #ac051b;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== Services Section ==================== */
+.ai-services {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.service-box {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.service-box h3 {
+    color: #0b1320;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-box p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== Process Section ==================== */
+.ai-process {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.step span {
+    display: block;
+    font-size: 40px;
+    color: #ac051b;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #0b1320;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.step p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== CTA Section ==================== */
+.ai-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(10, 17, 40, 0.95), rgba(0, 31, 84, 0.95));
+    color: #fff;
+}
+
+.ai-cta h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.ai-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
+.ai-cta button {
+    background: #ac051b;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ai-cta button:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    .ai-hero {
+        padding: 80px 20px 60px;
+    }
+
+    .ai-title {
+        font-size: 32px;
+    }
+
+    .ai-subtitle {
+        font-size: 16px;
+    }
+
+    .ai-about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .ai-about-right h2 {
+        font-size: 28px;
+    }
+
+    .section-title,
+    .section-title1 {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .ai-benefits,
+    .ai-services,
+    .ai-process {
+        padding: 60px 20px;
+    }
+
+    .ai-cta {
+        padding: 60px 20px;
+    }
+
+    .ai-cta h2 {
+        font-size: 28px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-title {
+        font-size: 26px;
+    }
+
+    .ai-btn,
+    .ai-cta button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}

@@ -29,7 +29,7 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2.5rem;
-    color: #ddd;
+    color: #fff;
 }
 
 .hero-buttons {
@@ -52,31 +52,22 @@
 .btn.primary {
     background: transparent;
     color: white;
-    border: 2px solid #ff3366;
+    border: 2px solid #ac051b;
 }
 
 .btn.primary:hover {
-    background-color: #c6284d;
+    background-color:#ac051b;
+    border: none;
 }
 
 .btn.outline {
     background: transparent;
     color: white;
-    border: 2px solid #ff3366;
-}
-
-.btn.primary:hover {
-    background-color: #c6284d;
-}
-
-.btn.outline {
-    background: transparent;
-    color: white;
-    border: 2px solid #ff3366;
+    border: 2px solid #ac051b;
 }
 
 .btn.outline:hover {
-    background-color: #ff3366;
+    background-color: #ac051b;
     color: white;
 }
 

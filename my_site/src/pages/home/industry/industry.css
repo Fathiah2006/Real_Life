@@ -27,10 +27,11 @@
 
 .industry-card {
     background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
 }
 
 .industry-card .icon {

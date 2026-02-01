@@ -1,0 +1,600 @@
+/* CoursesTraining.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* ==================== Base Styles ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.courses-page {
+    font-family: 'Nunito', sans-serif;
+    color: #111827;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== Hero Section ==================== */
+.courses-hero {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    padding: 120px 20px 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.courses-hero .breadcrumb {
+    font-size: 14px;
+    margin-bottom: 24px;
+    opacity: 0.85;
+}
+
+.courses-hero .breadcrumb a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.courses-hero .breadcrumb a:hover {
+    color: #fff;
+}
+
+.courses-hero .breadcrumb .active {
+    color: #fef3c7;
+    font-weight: 600;
+}
+
+.courses-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.courses-subtitle {
+    max-width: 700px;
+    margin: 0 auto 32px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.courses-btn {
+    background: #ac051b;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.courses-btn:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== About Section ==================== */
+.courses-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.courses-about-left img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.courses-about-left img:hover {
+    transform: scale(1.02);
+}
+
+.courses-about-right h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.courses-about-right p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.courses-about-right ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.courses-about-right ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.courses-about-right ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #059669;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ==================== Benefits Section ==================== */
+.courses-benefits {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 48px;
+    color: #0b1320;
+    font-weight: 700;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #059669;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== Programs Section ==================== */
+.courses-programs {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.program-header {
+    background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+    padding: 24px;
+    border-bottom: 3px solid #059669;
+    position: relative;
+}
+
+.program-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #fbbf24;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.program-badge.featured {
+    background: #ac051b;
+}
+
+.program-header h3 {
+    color: #0b1320;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.program-duration {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.program-body {
+    padding: 24px;
+}
+
+.program-body>p {
+    color: #4b5563;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.program-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.program-body ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.program-body ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: 700;
+}
+
+.program-btn {
+    width: 100%;
+    background: #059669;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.program-btn:hover {
+    background: #047857;
+    transform: translateY(-2px);
+}
+
+/* ==================== Corporate Section ==================== */
+.courses-corporate {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.corporate-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.corporate-left h2 {
+    font-size: 32px;
+    color: #0b1320;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.corporate-left p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.corporate-left ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 28px;
+}
+
+.corporate-left ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.corporate-left ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.corporate-btn {
+    background: #ac051b;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.corporate-btn:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+}
+
+.corporate-right img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ==================== Testimonials Section ==================== */
+.courses-testimonials {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #f9fafb;
+    padding: 32px;
+    border-radius: 12px;
+    border-left: 4px solid #059669;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: #fbbf24;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.testimonial-text {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-author strong {
+    color: #0b1320;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.testimonial-author span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ==================== Process Section ==================== */
+.courses-process {
+    padding: 80px 20px;
+    background: #f9fafb;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.step span {
+    display: block;
+    font-size: 40px;
+    color: #059669;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #0b1320;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.step p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ==================== CTA Section ==================== */
+.courses-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.95), rgba(16, 185, 129, 0.95));
+    color: #fff;
+}
+
+.courses-cta h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.courses-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
+.courses-cta button {
+    background: #ac051b;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.courses-cta button:hover {
+    background: #8b0416;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(172, 5, 27, 0.3);
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+    .courses-hero {
+        padding: 80px 20px 60px;
+    }
+
+    .courses-title {
+        font-size: 32px;
+    }
+
+    .courses-subtitle {
+        font-size: 16px;
+    }
+
+    .courses-about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .courses-about-right h2 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .courses-benefits,
+    .courses-programs,
+    .courses-corporate,
+    .courses-testimonials,
+    .courses-process {
+        padding: 60px 20px;
+    }
+
+    .corporate-content {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .corporate-left h2 {
+        font-size: 26px;
+    }
+
+    .courses-cta {
+        padding: 60px 20px;
+    }
+
+    .courses-cta h2 {
+        font-size: 28px;
+    }
+
+    .grid-3,
+    .programs-grid,
+    .testimonials-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-title {
+        font-size: 26px;
+    }
+
+    .courses-btn,
+    .corporate-btn,
+    .courses-cta button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .program-header h3 {
+        font-size: 20px;
+    }
+
+    .corporate-content {
+        padding: 20px;
+    }
+}

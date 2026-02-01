@@ -22,7 +22,6 @@ const industry = [
   { icon: <RadioTower />, title: 'Telecoms', desc: 'Network management, customer experience, security, and automation solutions.' },
   { icon: <Landmark />, title: 'U.S. Government', desc: 'We deliver secure, compliant digital solutions for public sector missions and operations.' },
   { icon: <Wrench />, title: 'Engineering & Construction', desc: 'From BIM tools to IoT integration, we build the digital backbone of the construction industry.' },
-  { icon: <Megaphone />, title: 'Marketing & Advertising', desc: 'We build effective tools to optimize strategy, analytics, and audience engagement.' },
 ];
 
 const Industry = () => (
