@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEye, FaUsers, FaDollarSign, FaSearch, FaUserCheck, FaShieldAlt } from 'react-icons/fa';
-import './WhyVoncross.css'; // Ensure you have this CSS file for styling    
+import './WhyVoncross.css';
 
 const whyItems = [
   {
