@@ -19,7 +19,7 @@ const Home = () => {
       <About />
       <Services />
       <TechStack />
-      <industryndustry />
+      <Industry />
       <AdvancedTech />
       <WhyVonCross />
       <ValuesSection />
