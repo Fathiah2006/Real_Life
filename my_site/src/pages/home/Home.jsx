@@ -9,7 +9,7 @@ import AdvancedTech from './advancetech/AdvancedTech';
 import WhyVonCross from './whyvoncross/WhyVoncross';
 import ValuesSection from './values/ValuesSection';
 import LetsStartForm from './form/LetsStartForm';
-import Industry from './industry/Industry'; 
+// import Industry from './industry/Industry'; 
 import { Import } from 'lucide-react';
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       <Partners />
       <About />
       <Services />
-      <Industry />
+      {/* <Industry /> */}
       <TechStack />
       <AdvancedTech />
       <WhyVonCross />
