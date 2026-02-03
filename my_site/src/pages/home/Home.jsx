@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from './hero/Hero';
 import Services from './services/Services';
 import Partners from './partners/Partners';
-import About from '../about/About';
+import About from './about1/About';
 import TechStack from './teckstack/TechStack';
 import AdvancedTech from './advancetech/AdvancedTech';
 import WhyVonCross from './whyvoncross/WhyVoncross';
