@@ -18,8 +18,8 @@ const Home = () => {
       <Partners />
       <About />
       <Services />
-      <TechStack />
       <Industry />
+      <TechStack />
       <AdvancedTech />
       <WhyVonCross />
       <ValuesSection />
