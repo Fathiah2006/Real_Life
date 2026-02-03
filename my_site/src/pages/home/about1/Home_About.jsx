@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './About.css';
+import './Home_About.css';  
 import { FaPlay } from 'react-icons/fa';
 
 const About = () => {
