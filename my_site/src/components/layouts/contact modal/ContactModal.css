@@ -1,4 +1,6 @@
-/* Overlay for form modal */
+/* =====================
+   Overlay
+===================== */
 .contact-overlay {
     position: fixed;
     top: 0;
@@ -14,11 +16,13 @@
     padding: 1rem;
 }
 
-/* Form container */
+/* =====================
+   Container
+===================== */
 .contact-container {
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 2rem;
     padding: 2rem;
     border-radius: 12px;
@@ -27,20 +31,14 @@
     max-height: 90vh;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease-in-out;
-    flex-direction: column;
     overflow-y: auto;
     position: relative;
     margin: auto;
 }
 
-/* Left side form */
-.contact-form {
-    flex: 1;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 12px;
-}
-
+/* =====================
+   Close Button
+===================== */
 .close-btn {
     position: sticky;
     top: 0;
@@ -56,7 +54,7 @@
     border: none;
     cursor: pointer;
     color: #000;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, color 0.2s ease;
     z-index: 10;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -65,6 +63,16 @@
 .close-btn:hover {
     transform: rotate(90deg);
     color: #ff4d5a;
+}
+
+/* =====================
+   Left: Form Section
+===================== */
+.contact-form {
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
 }
 
 .logo {
@@ -78,6 +86,7 @@
 .info-text {
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
+    color: #333;
 }
 
 .info-text span a {
@@ -85,6 +94,13 @@
     text-decoration: none;
 }
 
+.info-text span a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   Form Labels
+===================== */
 form label {
     display: block;
     font-weight: 500;
@@ -93,27 +109,37 @@ form label {
     color: #000;
 }
 
+/* =====================
+   Inputs & Textarea
+===================== */
 form input,
 form textarea {
-    color: #000 !important;
+    color: #000;
+    background-color: #fff;
+    -webkit-text-fill-color: #000;
+    caret-color: #000;
     font-size: 1rem;
     font-family: 'Nunito', sans-serif;
     width: 100%;
     padding: 0.9rem;
-    border: 1px solid #ddd;
+    border: 1.5px solid #ddd;
     border-radius: 10px;
     outline: none;
     box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 form textarea {
-    min-height: 100px;
+    min-height: 120px;
     resize: vertical;
+    line-height: 1.6;
 }
 
-form input:focus,
-form textarea:focus {
-    border-color: #ff4d5a;
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+    -webkit-text-fill-color: #aaa;
+    opacity: 1;
 }
 
 form input:hover,
@@ -121,6 +147,25 @@ form textarea:hover {
     border-color: #ff4d5a;
 }
 
+form input:focus,
+form textarea:focus {
+    border-color: #ff4d5a;
+    box-shadow: 0 0 0 3px rgba(255, 77, 90, 0.15);
+    background-color: #fff;
+    color: #000;
+    -webkit-text-fill-color: #000;
+}
+
+form input:-webkit-autofill,
+form textarea:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* =====================
+   Error Messages
+===================== */
 .error {
     color: #ff4d5a;
     font-size: 0.85rem;
@@ -128,11 +173,14 @@ form textarea:hover {
     display: block;
 }
 
+/* =====================
+   Privacy Text
+===================== */
 .privacy {
     font-size: 0.8rem;
     margin-top: 1rem;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .privacy a {
@@ -140,7 +188,13 @@ form textarea:hover {
     text-decoration: none;
 }
 
-/* File & send buttons */
+.privacy a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   File & Send Row
+===================== */
 .file-send {
     display: flex;
     justify-content: space-between;
@@ -167,6 +221,7 @@ form textarea:hover {
     cursor: pointer;
     color: #000;
     padding: 0.5rem;
+    transition: color 0.2s ease;
 }
 
 .attach:hover {
@@ -191,15 +246,22 @@ form textarea:hover {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
     white-space: nowrap;
 }
 
 .send-btn:hover {
     background: #8a0610;
+    transform: translateY(-1px);
 }
 
-/* Right side partners */
+.send-btn:active {
+    transform: translateY(0);
+}
+
+/* =====================
+   Right: Partners Section
+===================== */
 .partners {
     flex: 1;
     width: 100%;
@@ -236,15 +298,18 @@ form textarea:hover {
     width: 100%;
     height: auto;
     object-fit: contain;
-    transition: transform 0.2s;
     filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .partners img:hover {
     transform: scale(1.1);
+    opacity: 0.85;
 }
 
-/* Animations */
+/* =====================
+   Animation
+===================== */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -257,7 +322,9 @@ form textarea:hover {
     }
 }
 
-/* Tablet styles */
+/* =====================
+   Tablet (768px+)
+===================== */
 @media (min-width: 768px) {
     .contact-overlay {
         padding: 2rem;
@@ -297,7 +364,9 @@ form textarea:hover {
     }
 }
 
-/* Desktop styles */
+/* =====================
+   Desktop (1024px+)
+===================== */
 @media (min-width: 1024px) {
     .contact-container {
         padding: 4rem;
@@ -320,7 +389,9 @@ form textarea:hover {
     }
 }
 
-/* Small mobile devices */
+/* =====================
+   Small Mobile (max 480px)
+===================== */
 @media (max-width: 480px) {
     .contact-overlay {
         padding: 0.5rem;

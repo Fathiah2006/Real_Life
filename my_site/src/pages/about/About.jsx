@@ -4,7 +4,6 @@ import AboutPartners from './aboutpatners/AboutPartners'
 import AboutWho from './aboutwho/AboutWho'
 import TeamSection from './managementTeam/TeamSection'
 import WorkSection from './workSection/WorkSection'
-import ValuesSection from './Values/ValuesSection'
 import LetsStartForm from '../home/form/LetsStartForm'
 import VideoSection from './video/VideoSection'
 
@@ -17,7 +16,7 @@ const About = () => {
       <TeamSection />
       <WorkSection />
       <VideoSection />
-      <ValuesSection />
+      {/* <ValuesSection /> */}
       <LetsStartForm />
     </div>
   );
